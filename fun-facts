@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts about Delusional Girl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #e2e2e2;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fun Facts about Delusional Girl</h1>
+        <ul id="facts-list"></ul>
+        <button id="generate-facts">Generate Facts</button>
+    </div>
+    <script>
+        const facts = [
+            "The archetype of the delusional girl often appears in various forms of media, highlighting themes of obsession, fantasy, and the struggle between reality and imagination.",
+            "Characters described as delusional often have complex psychological backgrounds, stemming from trauma, mental health issues, or a desire to escape reality.",
+            "In many narratives, the delusional girl symbolizes rebellion against societal norms, representing a longing for freedom or a critique of constraints placed on women.",
+            "While delusions can be seen as negative traits, they can also evoke empathy, as audiences may root for these characters navigating their struggles.",
+            "Famous examples include 'Amélie Poulain' from 'Amélie' and 'Cecilia' from 'The Virgin Suicides,' both of whom have delusions tied to their narratives.",
+            "Delusional characters often have complicated relationships with others, leading to misunderstandings, conflict, or tragic outcomes.",
+            "The concept has inspired countless artists, writers, and filmmakers to explore themes of mental health, identity, and the nature of reality.",
+            "Many stories featuring delusional girls serve as social commentaries on the pressures faced by women regarding beauty, success, and conformity."
+        ];
+
+        document.getElementById('generate-facts').addEventListener('click', function() {
+            const factsList = document.getElementById('facts-list');
+            factsList.innerHTML = ''; // Clear previous facts
+            facts.forEach(fact => {
+                const li = document.createElement('li');
+                li.textContent = fact;
+                factsList.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
